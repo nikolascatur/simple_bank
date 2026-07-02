@@ -1,8 +1,8 @@
 postgres:
-	docker compose -f postgres/docker-compose.yml up -d
+	docker-compose -f postgres/docker-compose.yml up -d
 
 down:
-	docker compose -f postgres/docker-compose.yml down
+	docker-compose -f postgres/docker-compose.yml down
 
 createdb:
 	docker exec -it postgres-db createdb --username=myuser --owner=myuser simple_bank
